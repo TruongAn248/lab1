@@ -14,9 +14,9 @@ module.exports = (app) => {
 
     router.put("/:id", contacts.update);
 
-    router.dalete("/:id", contacts.delete);
+    router.delete("/:id", contacts.delete);
 
-    router.dalete("/", contacts.deleteAll);
+    router.delete("/", contacts.deleteAll);
 
     app.use("/api/contacts", router);
 };
