@@ -8,9 +8,9 @@ module.exports = (app) => {
 
     router.get("/", contacts.findAll);
 
-    router.get("/", contacts.findAllFavorite);
+    router.get("/favorite", contacts.findAllFavorite);
 
-    router.get("/", contacts.findOne);
+    router.get("/:id", contacts.findOne);
 
     router.put("/:id", contacts.update);
 
